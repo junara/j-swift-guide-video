@@ -1,0 +1,33 @@
+# Swift のビルド (skill の開発用)
+.build/
+.swiftpm/
+*.xcworkspace
+
+# j-guide-video の動画プロジェクトの生成物
+out/
+.jgv/
+
+# OS / editor
+.DS_Store
+.idea/
+*.log
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# scratch
+tmp/
+
+# ローカルの環境変数・API キー (mise.local.toml など)
+mise.local.toml
+*.local.toml
+.env
+.env.*
+
+# クラウドの TTS の鍵ファイル (サービスアカウントの鍵など。リポジトリに入れない)
+*service-account*.json
+*-sa-key*.json
+credentials*.json
+*.pem
+*.p12
+*.p8
