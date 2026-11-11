@@ -682,7 +682,7 @@ docs/images/                    # README の静止画
 
 ## 開発者向け
 
-- **issue と PR**: 個人で開発しているリポジトリなので、外部からの issue・PR・脆弱性の報告は受け付けていません（Issues は無効にしています）。直して使いたいときは、MIT License の範囲で fork してください
+- **issue と PR**: 個人で開発しているリポジトリなので、外部からの issue・PR・脆弱性の報告は受け付けていません（Issues と Pull requests は無効にしています）。直して使いたいときは、MIT License の範囲で fork してください
 - **開発ルール**: [CLAUDE.md](CLAUDE.md)（変更をそろえる文書、テスト、セキュリティ、コミットしないもの）
 - **デモを書き出す**: リポジトリのルートで `bash demo/run.sh` を実行します（1 本だけなら `bash demo/run.sh 05-budget-app-screen`）。詳しくは [demo/README.md](demo/README.md)
 - **変更履歴とセキュリティ**: 利用者に見える変更は [CHANGELOG.md](CHANGELOG.md)、「他人のプロジェクト＝コードの実行」の考え方は [SECURITY.md](SECURITY.md)

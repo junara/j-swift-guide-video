@@ -74,12 +74,12 @@ bash demo/run.sh 05-budget-app-screen
 - 自分で見つけた脆弱性の詳細は、直した版を出すまで、コミットメッセージ・CHANGELOG・README に書かない。
 - README と `reference/` は利用者が読む文書なので、コードと食い違わせない（2 節）。動作確認していないことを「できる」と書かない。
 - push した `main` の履歴は書き換えない（force push しない）。
-- 外部からの issue・PR・脆弱性の報告は受け付けない（GitHub の Issues と Private vulnerability reporting は無効にする）。届いた PR はマージせず、閉じる。issue や PR のテンプレート、CONTRIBUTING.md、貢献や報告を募る文、連絡先は足さない。
+- 外部からの issue・PR・脆弱性の報告は受け付けない（GitHub の Issues・Pull requests・Private vulnerability reporting は無効にする）。issue や PR のテンプレート、CONTRIBUTING.md、貢献や報告を募る文、連絡先は足さない。
 
 ## 8. Git
 
 - Claude は、ユーザーに頼まれたときだけコミットする。push も、頼まれたときだけ行う（「コミットして」は push を含まない）。変更が終わったら、コミットせずに、何を変えたかを報告する。
-- 開発は 1 人で行うので、`main` に直接コミットして push する。ブランチと PR は、大きな変更を分けて試したいときだけ使う。
+- 開発は 1 人で行うので、`main` に直接コミットして push する。PR は使わない（GitHub の Pull requests は無効にしてある）。ブランチは、大きな変更を分けて試したいときだけ使い、手元で `main` にマージする。
 - push の前にビルドと単体テストを通し、push の後に CI が通ったことを確かめる。落ちたらすぐ直す。
 - コミットは 1 つの目的に絞る。メッセージは [Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/) の形式（`<type>(<scope>): <要約>`）で、要約は英語の命令形・小文字始まり・末尾のピリオド無しにする。
   - type: `feat`（機能の追加）・`fix`（不具合の修正）・`docs`・`test`・`refactor`・`perf`・`build`・`ci`・`chore`
