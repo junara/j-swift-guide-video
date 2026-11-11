@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# jgv (j-guide-video の CLI) を起動する。初回と skill のソースを変えたときだけ Swift でビルドする
+# (ビルドは ~/Library/Caches/j-guide-video/ に置く。skill のフォルダには書かない)
+set -euo pipefail
+[ "$(uname -s)" = "Darwin" ] || { echo "ERROR: j-guide-video は macOS 専用です（現在 $(uname -s)）" >&2; exit 1; }
+# /usr/bin/swift は Command Line Tools が無くても存在するので、開発者ツールの有無で確認する
+xcode-select -p >/dev/null 2>&1 || { echo "ERROR: Xcode Command Line Tools がありません（xcode-select --install で入れる）" >&2; exit 1; }
+# ln -s …/bin/jgv ~/bin/jgv のようにシンボリックリンクで呼ばれても skill の場所が分かるよう、リンクをたどる
+SELF="${BASH_SOURCE[0]}"
+while [ -L "$SELF" ]; do
+  LINK="$(readlink "$SELF")"
+  case "$LINK" in /*) SELF="$LINK" ;; *) SELF="$(dirname "$SELF")/$LINK" ;; esac
+done
+SKILL_DIR="$(cd "$(dirname "$SELF")/.." && pwd)"
+# Package.swift は swift-tools-version 6.0 (Xcode / Command Line Tools 16 以降) が要る
+check_swift() {
+  local out v major
+  # swift が失敗する (Xcode の使用許諾に未同意など) ときも、set -e で黙って終わらずに理由を出す
+  if ! out="$(swift --version 2>&1)"; then
+    echo "ERROR: swift --version が失敗しました:" >&2
+    printf '%s\n' "$out" | head -5 >&2
+    echo "（Xcode の使用許諾に未同意なら sudo xcodebuild -license を実行してください）" >&2
+    exit 1
+  fi
+  v="$(printf '%s\n' "$out" | sed -nE 's/.*Swift version ([0-9]+\.[0-9]+).*/\1/p' | head -1)"
+  major="${v%%.*}"
+  major="${major:-0}"
+  if [ "$major" -lt 6 ]; then
+    echo "ERROR: Swift 6.0 以降が要ります（今の swift: ${v:-不明}）。最新の Xcode か Command Line Tools を入れてください（softwareupdate --list で更新を確認できます）" >&2
+    exit 1
+  fi
+}
+CACHE="${J_GUIDE_VIDEO_CACHE:-$HOME/Library/Caches/j-guide-video}"
+KEY="$(printf %s "$SKILL_DIR" | shasum | cut -c1-12)"
+BUILD="$CACHE/build-$KEY"
+BIN="$BUILD/release/jgv"
+# どの skill のビルドかの印 (jgv clean --stale が、置き場の無くなった skill の CLI のビルドを見分ける)
+MARK="$BUILD/skill-path"
+if [ ! -x "$BIN" ] || [ -n "$(find "$SKILL_DIR/Sources" "$SKILL_DIR/Package.swift" -newer "$BIN" -print -quit 2>/dev/null)" ]; then
+  check_swift
+  echo "jgv をビルドしています (初回は数分かかります)…" >&2
+  mkdir -p "$BUILD"
+  printf '%s\n' "$SKILL_DIR" >"$MARK"
+  # ログはビルドのフォルダごと ($CACHE/build.log は前の版の bin/jgv が書く。jgv clean --stale がビルド中かを見分けるのに使う)
+  LOG="$BUILD/build.log"
+  if ! swift build -c release --package-path "$SKILL_DIR" --scratch-path "$BUILD" --product jgv >"$LOG" 2>&1; then
+    grep -E "error" "$LOG" | sort -u | head -40 >&2 || true
+    echo "ERROR: jgv のビルドに失敗しました (全文: $LOG)" >&2
+    exit 1
+  fi
+  touch "$BIN"
+fi
+[ -f "$MARK" ] || printf '%s\n' "$SKILL_DIR" >"$MARK" 2>/dev/null || true
+J_GUIDE_VIDEO_SKILL="$SKILL_DIR" exec "$BIN" "$@"

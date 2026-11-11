@@ -1,0 +1,60 @@
+{
+  "title": "小物入れの組み立て",
+  "lang": "ja-JP",
+  "layout": "guide-manual",
+  "guide": {
+    "kicker": "ASSEMBLY GUIDE / SMALL BOX"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "部品を確認する",
+      "visual": "Parts",
+      "lines": [
+        {
+          "text": "底板一枚、側板二枚、ネジ四本を確認します。",
+          "speak": "ソコイタ一枚、ガワイタ二枚、ネジヨンホンを確認します。"
+        }
+      ]
+    },
+    {
+      "heading": "側板を立てる",
+      "visual": "Sides",
+      "lines": [
+        {
+          "text": "底板の左右に、側板を立てて合わせます。",
+          "speak": "ソコイタの左右に、ガワイタを立てて合わせます。"
+        }
+      ]
+    },
+    {
+      "heading": "ネジで留める",
+      "visual": "Screw",
+      "lines": [
+        {
+          "text": "ネジを差し込み、ドライバーで締めます。",
+          "speak": "ネジを差し込み、ドライバーで締めます。"
+        },
+        {
+          "text": "反対側も、同じように留めます。",
+          "speak": "反対側も、同じように留めます。"
+        }
+      ]
+    }
+  ]
+}

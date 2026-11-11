@@ -1,0 +1,10 @@
+init <Prepare
+0.0+.6 H>rice.grip~.6
+0.1+.1 rice@LIFT~.5
+0.2+.1 rice@PLATETOP~.8
+0.2+.9 rice.vis=0;dish.vis=1;plate=0
+1.0+.35 H>mw.handle~.55
+1.0+.4 mw.open=1~.8
+1.1+.4 H>dish.gripR~.5
+1.1+.45 dish@MWIN~.85
+1.1+1.3 dish.in=1

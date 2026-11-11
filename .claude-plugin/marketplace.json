@@ -1,0 +1,14 @@
+{
+  "name": "junara-swift-skills",
+  "description": "junara の Claude Code plugin（Swift 版）",
+  "owner": {
+    "name": "junara"
+  },
+  "plugins": [
+    {
+      "name": "jgvs",
+      "source": ".",
+      "description": "手順書から、ナレーションと字幕に同期して動くイラストの手順動画（MP4）を Swift で作る。macOS 専用。Turns a Markdown procedure into a narrated, illustrated how-to MP4 (Swift, macOS only)."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 電子レンジ (正面。原点 = 底の中心、幅 420 × 高さ 280)。
+     base: 本体・庫内・操作部 (扉の下に描く) / light: 庫内の明かり (ふだんは消灯) / door: 扉 (左の蝶番 x = -198 で手前に開く)
+     線は動画の配色の ink、スタートボタンは accent で塗る
+     part-handle: 扉の取っ手 / part-inside: 庫内の床の中心 / part-display: 表示窓の中心 / part-start: スタートボタン -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-220 -290 440 290" width="440" height="290">
+  <g stroke="var(--ink, #353b35)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <g id="base">
+      <rect x="-210" y="-280" width="420" height="280" rx="20" fill="#ece8df"/>
+      <rect id="cavity" x="-186" y="-256" width="280" height="226" rx="10" fill="#d9d3c4" stroke-width="4"/>
+      <rect id="light" x="-186" y="-256" width="280" height="226" rx="10" fill="#f6dc8a" stroke-width="4" display="none"/>
+      <path d="M -166 -50 H 74" fill="none" stroke="#c4bca9" stroke-width="4"/>
+      <rect x="114" y="-256" width="76" height="226" rx="8" fill="#e2ddd1" stroke-width="4"/>
+      <rect id="screen" x="120" y="-244" width="64" height="38" rx="5" fill="#2f3a3d" stroke-width="4"/>
+      <circle cx="152" cy="-160" r="20" fill="#f3ede1" stroke-width="4"/>
+      <path d="M 152 -160 L 152 -174" fill="none" stroke-width="4"/>
+      <rect id="start" x="128" y="-100" width="48" height="22" rx="8" fill="var(--accent, #d98a5c)" stroke-width="4"/>
+    </g>
+    <g id="door">
+      <path d="M -184 -268 H 92 A 14 14 0 0 1 106 -254 V -32 A 14 14 0 0 1 92 -18 H -184 A 14 14 0 0 1 -198 -32 V -254 A 14 14 0 0 1 -184 -268 Z M -168 -246 H 46 A 8 8 0 0 1 54 -238 V -56 A 8 8 0 0 1 46 -48 H -168 A 8 8 0 0 1 -176 -56 V -238 A 8 8 0 0 1 -168 -246 Z" fill="#4a5254" fill-rule="evenodd"/>
+      <rect id="glass" x="-176" y="-246" width="230" height="198" rx="8" fill="#2f3a33" fill-opacity="0.3" stroke-width="4"/>
+      <rect id="handle" x="72" y="-228" width="16" height="150" rx="8" fill="#c9d3d5" stroke-width="4"/>
+    </g>
+  </g>
+  <circle id="part-handle" cx="80" cy="-153" r="4" fill="#f0a020"/>
+  <circle id="part-inside" cx="-46" cy="-50" r="4" fill="#f0a020"/>
+  <circle id="part-display" cx="152" cy="-225" r="4" fill="#f0a020"/>
+  <circle id="part-start" cx="152" cy="-89" r="4" fill="#f0a020"/>
+</svg>

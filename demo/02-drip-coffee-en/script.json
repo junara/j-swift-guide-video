@@ -1,0 +1,89 @@
+{
+  "title": "How to Brew Drip Bag Coffee",
+  "lang": "en-US",
+  "layout": "guide",
+  "guide": {
+    "kicker": "DAILY RITUAL / COFFEE GUIDE"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "engine": "apple",
+    "voice": "auto",
+    "rate": 0.48
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 34,
+    "maxCharsPerCaption": 80
+  },
+  "scenes": [
+    {
+      "heading": "Get ready",
+      "visual": "Prepare",
+      "lines": [
+        "Prepare a mug, a drip coffee bag and a kettle.",
+        "Boil the water and let it cool to about ninety degrees Celsius."
+      ]
+    },
+    {
+      "heading": "Open the bag",
+      "visual": "Open",
+      "lines": [
+        "Hold the bag with both hands, tear off the top strip along the marked line.",
+        "Open it gently to avoid spilling the coffee."
+      ]
+    },
+    {
+      "heading": "Attach it to the mug",
+      "visual": "Attach",
+      "lines": [
+        "Spread the paper hooks, attach them to the rim of your mug.",
+        "Check that the bag is secure before letting go."
+      ]
+    },
+    {
+      "heading": "Let the coffee bloom",
+      "visual": "Bloom",
+      "lines": [
+        "To moisten the coffee evenly, pour a little hot water into the bag.",
+        "Let it bloom for twenty seconds to release the aroma."
+      ]
+    },
+    {
+      "heading": "Pour slowly",
+      "visual": "Pour",
+      "lines": [
+        "With the kettle ready, pour slowly in two or three rounds.",
+        "Wait for the water to drain between pours so the bag does not overflow."
+      ]
+    },
+    {
+      "heading": "Remove and enjoy",
+      "visual": "Finish",
+      "lines": [
+        "Once the water has drained, remove the bag from the mug.",
+        "Watch out for hot drips!",
+        "Your coffee is ready.",
+        "Enjoy the aroma."
+      ]
+    }
+  ],
+  "strings": {
+    "prepare.callout": "Prepare your tools and hot water",
+    "open.step1": "Hold with both hands",
+    "open.step2": "Tear off the top strip",
+    "open.step3": "Check the opening",
+    "attach.step1": "Spread the hooks",
+    "attach.step2": "Lower onto the rim",
+    "attach.step3": "Check that it is secure",
+    "attach.step4": "Let go of the bag",
+    "bloom.callout": "Bloom for 20 seconds (time shortened)",
+    "pour.callout": "Pour in 2–3 rounds",
+    "finish.callout": "Be careful of hot drips"
+  }
+}

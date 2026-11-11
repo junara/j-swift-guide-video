@@ -1,0 +1,21 @@
+{
+  "name": "jgvs",
+  "version": "0.1.0",
+  "description": "手順書から、ナレーションと字幕に同期して動くイラストの手順動画（Swift で描いて書き出す MP4）を作る skill（j-guide-video）。macOS 専用。既定の macOS の音声で作った動画は、Apple の使用許諾上、個人的・非商用の利用に限られる（商用で使えるクラウドの TTS にも切り替えられる）。Turns a Markdown procedure into a narrated, illustrated how-to MP4 (Swift, macOS only).",
+  "author": {
+    "name": "junara"
+  },
+  "homepage": "https://github.com/junara/j-swift-guide-video",
+  "repository": "https://github.com/junara/j-swift-guide-video",
+  "license": "MIT",
+  "keywords": [
+    "swift",
+    "video",
+    "tutorial",
+    "how-to",
+    "narration",
+    "coregraphics",
+    "macos"
+  ],
+  "skills": "./.claude/skills/"
+}

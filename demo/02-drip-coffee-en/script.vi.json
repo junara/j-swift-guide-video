@@ -1,0 +1,85 @@
+{
+  "title": "Cách pha cà phê túi lọc",
+  "lang": "vi-VN",
+  "layout": "guide",
+  "guide": {
+    "kicker": "DAILY RITUAL / HƯỚNG DẪN CÀ PHÊ"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": { "engine": "apple", "voice": "auto", "rate": 0.48 },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 34,
+    "maxCharsPerCaption": 80
+  },
+  "scenes": [
+    {
+      "heading": "Chuẩn bị dụng cụ",
+      "visual": "Prepare",
+      "lines": [
+        "Chuẩn bị cốc, túi lọc cà phê và ấm nước.",
+        "Đun sôi nước rồi để nguội xuống khoảng chín mươi độ."
+      ]
+    },
+    {
+      "heading": "Mở túi lọc",
+      "visual": "Open",
+      "lines": [
+        "Giữ túi bằng hai tay, xé dải giấy phía trên theo đường đánh dấu.",
+        "Mở từ từ để cà phê không bị đổ ra ngoài."
+      ]
+    },
+    {
+      "heading": "Gắn túi lên cốc",
+      "visual": "Attach",
+      "lines": [
+        "Mở rộng hai quai giấy, gắn chúng lên miệng cốc.",
+        "Kiểm tra xem túi đã đứng vững chưa."
+      ]
+    },
+    {
+      "heading": "Ủ cà phê",
+      "visual": "Bloom",
+      "lines": [
+        "Làm ướt đều bột cà phê, rót một ít nước vào túi.",
+        "Chờ hai mươi giây để hương cà phê tỏa ra."
+      ]
+    },
+    {
+      "heading": "Rót nước từ từ",
+      "visual": "Pour",
+      "lines": [
+        "Chuẩn bị rót nước, rót từ từ thành hai hoặc ba lần.",
+        "Chờ nước chảy xuống sau mỗi lần rót để túi không bị tràn."
+      ]
+    },
+    {
+      "heading": "Lấy túi ra và thưởng thức",
+      "visual": "Finish",
+      "lines": [
+        "Khi nước đã chảy hết, nhấc túi ra khỏi cốc.",
+        "Cẩn thận với những giọt nước nóng!",
+        "Cà phê đã sẵn sàng.",
+        "Mời bạn thưởng thức."
+      ]
+    }
+  ],
+  "strings": {
+    "prepare.callout": "Chuẩn bị dụng cụ và nước nóng",
+    "open.step1": "Cầm bằng hai tay",
+    "open.step2": "Xé phần đầu túi",
+    "open.step3": "Kiểm tra miệng túi",
+    "attach.step1": "Mở rộng móc giấy",
+    "attach.step2": "Móc lên miệng cốc",
+    "attach.step3": "Kiểm tra độ chắc chắn",
+    "attach.step4": "Buông tay",
+    "bloom.callout": "Ủ 20 giây (đã rút ngắn)",
+    "pour.callout": "Rót làm 2–3 lần",
+    "finish.callout": "Cẩn thận giọt nóng"
+  }
+}

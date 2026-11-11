@@ -1,0 +1,84 @@
+{
+  "title": "挂耳咖啡冲泡方法",
+  "lang": "zh-CN",
+  "layout": "guide",
+  "guide": {
+    "kicker": "DAILY RITUAL / 咖啡指南"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": { "engine": "apple", "voice": "auto", "rate": 0.48 },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "准备工具",
+      "visual": "Prepare",
+      "lines": [
+        "准备好马克杯、挂耳咖啡和水壶。",
+        "把水烧开后稍等片刻，让水温降到九十摄氏度左右。"
+      ]
+    },
+    {
+      "heading": "打开咖啡袋",
+      "visual": "Open",
+      "lines": [
+        "用双手拿稳咖啡袋，沿标记线撕开顶部封条。",
+        "动作要轻，避免咖啡粉洒出来。"
+      ]
+    },
+    {
+      "heading": "挂在杯口",
+      "visual": "Attach",
+      "lines": [
+        "展开两侧纸挂耳，挂在杯口边缘。",
+        "检查咖啡袋是否稳固，再松开双手。"
+      ]
+    },
+    {
+      "heading": "少量注水闷蒸",
+      "visual": "Bloom",
+      "lines": [
+        "为了让咖啡粉均匀湿润，先倒入少量热水。",
+        "闷蒸二十秒，让咖啡释放香气。"
+      ]
+    },
+    {
+      "heading": "缓慢注水",
+      "visual": "Pour",
+      "lines": [
+        "拿稳水壶，缓慢倒入热水，分两到三次完成。",
+        "每次等水滴落后再继续，避免咖啡袋溢出。"
+      ]
+    },
+    {
+      "heading": "取下咖啡袋",
+      "visual": "Finish",
+      "lines": [
+        "等热水滴完，取下咖啡袋。",
+        "小心烫手的水滴！",
+        "香浓的咖啡就泡好了，慢慢享用吧。"
+      ]
+    }
+  ],
+  "strings": {
+    "prepare.callout": "准备工具和热水",
+    "open.step1": "双手拿好",
+    "open.step2": "撕开顶部",
+    "open.step3": "检查开口",
+    "attach.step1": "展开挂耳",
+    "attach.step2": "挂在杯沿上",
+    "attach.step3": "确认是否稳固",
+    "attach.step4": "松开手",
+    "bloom.callout": "闷蒸20秒（时间已缩短）",
+    "pour.callout": "分2〜3次注水",
+    "finish.callout": "小心热水滴落"
+  }
+}

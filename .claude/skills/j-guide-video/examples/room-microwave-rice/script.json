@@ -1,0 +1,78 @@
+{
+  "title": "冷凍ごはんの温め方",
+  "lang": "ja-JP",
+  "layout": "guide",
+  "guide": {
+    "kicker": "QUICK MEAL / FROZEN RICE"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "用意する",
+      "visual": "Prepare",
+      "lines": [
+        {
+          "text": "冷凍ごはんと、お茶わんを、用意します。",
+          "speak": "冷凍ごはんと、お茶わんを、用意します。"
+        }
+      ]
+    },
+    {
+      "heading": "レンジに入れる",
+      "visual": "Load",
+      "lines": [
+        {
+          "text": "冷凍ごはんを、ラップのまま、お皿にのせます。",
+          "speak": "冷凍ごはんを、ラップのまま、お皿にのせます。"
+        },
+        {
+          "text": "扉を開けて、電子レンジの真ん中に入れます。",
+          "speak": "扉を開けて、電子レンジのマンナカに入れます。"
+        }
+      ]
+    },
+    {
+      "heading": "温める",
+      "visual": "Heat",
+      "lines": [
+        {
+          "text": "扉を閉めて、六百ワットで、二分温めます。",
+          "speak": "扉を閉めて、ロッピャクワットで、ニフン温めます。"
+        },
+        {
+          "text": "温め終わったら、扉を開けて取り出します。",
+          "speak": "温め終わったら、扉を開けて取り出します。"
+        }
+      ]
+    },
+    {
+      "heading": "盛り付ける",
+      "visual": "Serve",
+      "lines": [
+        {
+          "text": "ラップを外して、ごはんをほぐし、お茶わんに盛ります。",
+          "speak": "ラップを外して、ごはんをほぐし、お茶わんに盛ります。"
+        },
+        {
+          "text": "熱いので、やけどに気をつけましょう。",
+          "speak": "熱いので、やけどに気をつけましょう。"
+        }
+      ]
+    }
+  ]
+}

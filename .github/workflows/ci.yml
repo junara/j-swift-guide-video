@@ -1,0 +1,38 @@
+# skill の CLI と kit がビルドでき、単体テストが通ることを確かめる (macOS 専用の skill なので macOS のランナー)。
+# 対象は最新の Xcode / Swift だけなので、ランナーにある最新の安定版の Xcode を選んで使う
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: .claude/skills/j-guide-video
+    steps:
+      - uses: actions/checkout@v5
+      - name: 最新の Xcode を選ぶ
+        run: |
+          xcode="$(ls -d /Applications/Xcode_*.app | grep -viE 'beta|_rc|release_candidate' | sort -V | tail -1)"
+          echo "使う Xcode: $xcode"
+          sudo xcode-select -s "$xcode"
+      - name: Swift version
+        run: swift --version
+      - name: Build (CLI と kit)
+        run: swift build -c release
+      - name: Unit tests
+        run: swift test
+      - name: md2script (手順書 → 台本。音声は作らない)
+        run: |
+          for d in examples/*/; do
+            mkdir -p "$RUNNER_TEMP/md/$d"
+            .build/release/jgv md2script "$d/procedure.md" -o "$RUNNER_TEMP/md/$d/script.json" --no-library
+          done

@@ -1,0 +1,55 @@
+{
+  "title": "マグの茶渋を落とす",
+  "lang": "ja-JP",
+  "layout": "guide",
+  "guide": {
+    "kicker": "LIFE HACK / KITCHEN",
+    "palette": {
+      "primary": "#2f6f6a",
+      "accent": "#e07a5f"
+    }
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "tts": { "engine": "apple", "voice": "auto", "rate": 0.52 },
+  "gap": 0.3,
+  "sceneGap": 0.6,
+  "padStart": 0.6,
+  "padEnd": 1.2,
+  "style": {
+    "maxCharsPerCaption": 18
+  },
+  "scenes": [
+    {
+      "heading": "用意する",
+      "visual": "Prepare",
+      "lines": [
+        { "text": "茶渋のついたマグカップと、重曹を用意します。", "speak": "ちゃしぶの ついた マグカップと、じゅうそうを よういします。" },
+        { "text": "スポンジもあると便利です。", "speak": "スポンジもあると便利です。" }
+      ]
+    },
+    {
+      "heading": "重曹を入れる",
+      "visual": "Soda",
+      "lines": [
+        { "text": "マグに、重曹を小さじ1杯入れます。", "speak": "マグに、じゅうそうを こさじ いっぱい いれます。" },
+        { "text": "少量の水を加えて、ペースト状にします。", "speak": "少量の水を加えて、ペースト状にします。" }
+      ]
+    },
+    {
+      "heading": "こする",
+      "visual": "Scrub",
+      "lines": [
+        { "text": "スポンジで、茶渋をくるくるとこすります。", "speak": "スポンジで、ちゃしぶを くるくると こすります。" }
+      ]
+    },
+    {
+      "heading": "すすぐ",
+      "visual": "Rinse",
+      "lines": [
+        { "text": "水でよくすすいだら、ピカピカです。", "speak": "水でよくすすいだら、ピカピカです。" }
+      ]
+    }
+  ]
+}

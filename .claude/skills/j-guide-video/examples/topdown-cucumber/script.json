@@ -1,0 +1,56 @@
+{
+  "title": "きゅうりの塩もみ",
+  "lang": "ja-JP",
+  "layout": "guide-topdown",
+  "guide": {
+    "kicker": "QUICK SIDE DISH / CUCUMBER"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "用意する",
+      "visual": "Prepare",
+      "lines": [
+        {
+          "text": "まな板に、きゅうりを置きます。",
+          "speak": "まな板に、きゅうりを置きます。"
+        }
+      ]
+    },
+    {
+      "heading": "輪切りにする",
+      "visual": "Slice",
+      "lines": [
+        {
+          "text": "左手で押さえて、端から薄く切ります。",
+          "speak": "左手で押さえて、端から薄く切ります。"
+        }
+      ]
+    },
+    {
+      "heading": "塩をふる",
+      "visual": "Salt",
+      "lines": [
+        {
+          "text": "切ったきゅうりをボウルに入れ、塩をふります。",
+          "speak": "切ったきゅうりをボウルに入れ、塩をふります。"
+        }
+      ]
+    }
+  ]
+}

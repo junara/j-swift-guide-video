@@ -1,0 +1,67 @@
+{
+  "title": "カラーボックスの組み立て",
+  "lang": "ja-JP",
+  "layout": "guide-manual",
+  "guide": {
+    "kicker": "ASSEMBLY GUIDE / COLOR BOX",
+    "palette": {
+      "primary": "#1f5f99",
+      "accent": "#e2a23b",
+      "cream": "#ffffff",
+      "ink": "#2b2f33"
+    }
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": { "engine": "apple", "voice": "auto", "rate": 0.5 },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "部品を確認する",
+      "visual": "Parts",
+      "lines": [
+        { "text": "箱から部品を取り出し、数を確認します。", "speak": "箱から部品を取り出し、数を確認します。" },
+        { "text": "側板2枚、天板と底板、棚板2枚、背板、ネジ16本です。", "speak": "がわいた にまい、てんいたと そこいた、たないた にまい、うらいた、ネジ じゅうろっぽん です。" }
+      ]
+    },
+    {
+      "heading": "棚板を取り付ける",
+      "visual": "Shelf",
+      "lines": [
+        { "text": "側板に、棚板を差し込みます。", "speak": "がわいたに、たないたを さしこみます。" },
+        { "text": "ネジで、しっかり固定します。", "speak": "ネジで、しっかり固定します。" }
+      ]
+    },
+    {
+      "heading": "天板と底板を付ける",
+      "visual": "Frame",
+      "lines": [
+        { "text": "天板と底板も、同じように取り付けます。", "speak": "てんいたと そこいたも、おなじように とりつけます。" },
+        { "text": "反対側の側板を合わせて、ネジで留めます。", "speak": "はんたいがわの がわいたを あわせて、ネジで とめます。" }
+      ]
+    },
+    {
+      "heading": "背板をはめる",
+      "visual": "Back",
+      "lines": [
+        { "text": "背板を、本体の後ろの溝にはめ込みます。", "speak": "うらいたを、ほんたいの うしろの みぞに はめこみます。" }
+      ]
+    },
+    {
+      "heading": "完成",
+      "visual": "Done",
+      "lines": [
+        { "text": "本体を起こしたら、完成です。", "speak": "本体を起こしたら、完成です。" },
+        { "text": "棚板に、重い物を載せすぎないようにしましょう。", "speak": "たないたに、おもいものを のせすぎないように しましょう。" }
+      ]
+    }
+  ]
+}

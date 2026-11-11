@@ -1,0 +1,55 @@
+{
+  "title": "インスタントコーヒーの入れ方",
+  "lang": "ja-JP",
+  "layout": "guide",
+  "guide": {
+    "kicker": "COFFEE BREAK / INSTANT"
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "maxCharsPerCaption": 18
+  },
+  "scenes": [
+    {
+      "heading": "粉を入れる",
+      "visual": "Powder",
+      "lines": [
+        {
+          "text": "スプーン一杯の粉を、マグに入れます。",
+          "speak": "スプーンイッパイの粉を、マグに入れます。"
+        }
+      ]
+    },
+    {
+      "heading": "お湯を注ぐ",
+      "visual": "Pour",
+      "lines": [
+        {
+          "text": "お湯を、マグの八分目まで注ぎます。",
+          "speak": "お湯を、マグのハチブンメまで注ぎます。"
+        }
+      ]
+    },
+    {
+      "heading": "混ぜる",
+      "visual": "Stir",
+      "lines": [
+        {
+          "text": "スプーンで、よく混ぜたら完成です。",
+          "speak": "スプーンで、よく混ぜたら完成です。"
+        }
+      ]
+    }
+  ]
+}

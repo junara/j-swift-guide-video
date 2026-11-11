@@ -1,0 +1,74 @@
+{
+  "title": "スマホでアラームを設定する",
+  "lang": "ja-JP",
+  "layout": "guide-screen",
+  "guide": {
+    "kicker": "SMARTPHONE BASICS / ALARM"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "時計アプリを開く",
+      "visual": "Open",
+      "lines": [
+        {
+          "text": "ホーム画面で、時計アプリをタップします。",
+          "speak": "ホーム画面で、時計アプリをタップします。"
+        },
+        {
+          "text": "下の、アラームタブを開きます。",
+          "speak": "下の、アラームタブを開きます。"
+        }
+      ]
+    },
+    {
+      "heading": "アラームを追加する",
+      "visual": "Add",
+      "lines": [
+        {
+          "text": "右上の、プラスボタンをタップします。",
+          "speak": "右上の、プラスボタンをタップします。"
+        }
+      ]
+    },
+    {
+      "heading": "時刻を選ぶ",
+      "visual": "Pick",
+      "lines": [
+        {
+          "text": "時と分を、上下にスワイプして、七時ちょうどに合わせます。",
+          "speak": "ジとフンを、上下にスワイプして、シチジちょうどに合わせます。"
+        }
+      ]
+    },
+    {
+      "heading": "保存する",
+      "visual": "Save",
+      "lines": [
+        {
+          "text": "保存をタップすると、一覧にアラームが追加されます。",
+          "speak": "保存をタップすると、一覧にアラームが追加されます。"
+        },
+        {
+          "text": "スイッチがオンになっていれば、設定は完了です。",
+          "speak": "スイッチがオンになっていれば、設定は完了です。"
+        }
+      ]
+    }
+  ]
+}

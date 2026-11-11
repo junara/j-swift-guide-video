@@ -1,0 +1,78 @@
+{
+  "title": "マグカップの洗い方",
+  "lang": "ja-JP",
+  "layout": "guide",
+  "guide": {
+    "kicker": "KITCHEN BASICS / MUG"
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": {
+    "voice": "auto",
+    "rate": 0.5,
+    "engine": "apple"
+  },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "用意する",
+      "visual": "Prepare",
+      "lines": [
+        {
+          "text": "スポンジと、台所用洗剤を、用意します。",
+          "speak": "スポンジと、台所用洗剤を、用意します。"
+        }
+      ]
+    },
+    {
+      "heading": "泡立てる",
+      "visual": "Lather",
+      "lines": [
+        {
+          "text": "スポンジを水でぬらし、洗剤を少しつけます。",
+          "speak": "スポンジを水でぬらし、洗剤を少しつけます。"
+        },
+        {
+          "text": "軽くにぎって、泡立てます。",
+          "speak": "軽くにぎって、泡立てます。"
+        }
+      ]
+    },
+    {
+      "heading": "こすって洗う",
+      "visual": "Scrub",
+      "lines": [
+        {
+          "text": "マグの内側を、くるくるとこすります。",
+          "speak": "マグの内側を、くるくるとこすります。"
+        },
+        {
+          "text": "ふちと取っ手も、忘れずに洗います。",
+          "speak": "ふちと取っ手も、忘れずに洗います。"
+        }
+      ]
+    },
+    {
+      "heading": "すすいで拭く",
+      "visual": "Rinse",
+      "lines": [
+        {
+          "text": "流水で、泡をよく流します。",
+          "speak": "流水で、泡をよく流します。"
+        },
+        {
+          "text": "最後に、タオルで水気を拭きとりましょう。",
+          "speak": "最後に、タオルで水気を拭きとりましょう。"
+        }
+      ]
+    }
+  ]
+}

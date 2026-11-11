@@ -1,0 +1,66 @@
+{
+  "title": "おにぎりの作り方",
+  "lang": "ja-JP",
+  "layout": "guide-topdown",
+  "guide": {
+    "kicker": "HOME COOKING / ONIGIRI",
+    "palette": {
+      "primary": "#b4553a",
+      "accent": "#e2b04a"
+    }
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "tts": { "engine": "apple", "voice": "auto", "rate": 0.5 },
+  "gap": 0.45,
+  "sceneGap": 0.9,
+  "padStart": 0.6,
+  "padEnd": 1.4,
+  "style": {
+    "subtitleFontSize": 38,
+    "maxCharsPerCaption": 40
+  },
+  "scenes": [
+    {
+      "heading": "材料を用意する",
+      "visual": "Prepare",
+      "lines": [
+        { "text": "温かいご飯、塩、梅干し、海苔を用意します。", "speak": "あたたかい ごはん、しお、うめぼし、のりを よういします。" },
+        { "text": "手をきれいに洗ってから始めましょう。", "speak": "手をきれいに洗ってから始めましょう。" }
+      ]
+    },
+    {
+      "heading": "ご飯をのせる",
+      "visual": "Rice",
+      "lines": [
+        { "text": "ラップを広げて、塩を軽くふります。", "speak": "ラップを広げて、塩を軽くふります。" },
+        { "text": "その上に、ご飯を茶わん一杯分のせます。", "speak": "そのうえに、ごはんを ちゃわん いっぱいぶん のせます。" }
+      ]
+    },
+    {
+      "heading": "具をのせる",
+      "visual": "Filling",
+      "lines": [
+        { "text": "ご飯の真ん中を少しくぼませ、梅干しをのせます。", "speak": "ごはんの まんなかを すこし くぼませ、うめぼしを のせます。" },
+        { "text": "上から、少しご飯をかぶせます。", "speak": "上から、少しご飯をかぶせます。" }
+      ]
+    },
+    {
+      "heading": "三角に握る",
+      "visual": "Shape",
+      "lines": [
+        { "text": "ラップで包み、手のひらで三角に握ります。", "speak": "ラップで つつみ、てのひらで さんかくに にぎります。" },
+        { "text": "力を入れすぎず、ふんわりと握るのがコツです。", "speak": "力を入れすぎず、ふんわりと握るのがコツです。" }
+      ]
+    },
+    {
+      "heading": "海苔を巻く",
+      "visual": "Nori",
+      "lines": [
+        { "text": "ラップを外して、海苔を巻きます。", "speak": "ラップを はずして、のりを まきます。" },
+        { "text": "お皿にのせたら、完成です。", "speak": "お皿にのせたら、完成です。" }
+      ]
+    }
+  ]
+}
